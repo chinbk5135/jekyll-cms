@@ -39,6 +39,3 @@
   ],
   "homepage": "https://github.com/NickStees/jekyll-cms"
 }
-
-chore: upgrade gulp-sass to v5 and add dart-sass
-
