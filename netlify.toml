@@ -15,7 +15,7 @@
   publish = "_site/"
 
   # Default build command.
-  command = "gem install bundler -v 2.4.22 && bundle install && jekyll build"
+  command = "gem uninstall -aIx bundler && gem install bundler -v 2.4.22 && bundle install && jekyll build"
 
   [build.environment]
   RUBY_VERSION = "2.7.8"
