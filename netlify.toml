@@ -16,7 +16,6 @@
 
   # Default build command.
   command = "gem install bundler -v 2.4.22 && bundle install && jekyll build"
-  publish = "_site"
 
   [build.environment]
   RUBY_VERSION = "2.7.8"
