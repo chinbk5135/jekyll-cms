@@ -21,8 +21,9 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.0",
+    "sass": "^1.77.0"
   },
   "repository": {
     "type": "git",
@@ -38,3 +39,6 @@
   ],
   "homepage": "https://github.com/NickStees/jekyll-cms"
 }
+
+chore: upgrade gulp-sass to v5 and add dart-sass
+
