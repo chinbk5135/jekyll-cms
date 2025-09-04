@@ -3,8 +3,8 @@
   # Directory that contains the deploy-ready HTML files and assets
   publish = "_site/"
   
-  # Simplified build command
-  command = "bundle install && bundle exec jekyll build"
+  # Build command with bundler update
+  command = "gem install bundler:2.4.22 && bundle install && bundle exec jekyll build"
 
   [build.environment]
     RUBY_VERSION = "2.7.8"
