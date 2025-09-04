@@ -1,45 +1,65 @@
-
-exclude:
-  - "/vendor/"
-  - "/node_modules/"
-  - "/assets/_src_img/"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "gulpfile.js"
-  - "README.md"
-  - "LICENSE.md"
-  - "*.gemspec"
-
-keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
-
-
 # Site settings
-title: Jekyll Starter
-subtitle: "A template to get started on"
+title: Your App Name
+description: Your app description and promotion site
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
-baseurl: ""
-cover: "/assets/cover.png"
-logo: "/assets/logo.png"
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+permalink: pretty
 
-# Sass is off loaded to gulp.js 
-# sass:
-#     sass_dir: assets/_scss
-#     style: compressed
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
 
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
 
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+# Collections (for CMS)
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:name/
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - README.md
+  - netlify.toml
+
+# Include
+include:
+  - _pages
+
+# Sass
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Your Name"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
