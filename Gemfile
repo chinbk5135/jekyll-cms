@@ -5,7 +5,6 @@ ruby "2.7.8"
 
 # Core Jekyll gems
 gem "jekyll", "~> 4.2.0"
-gem "bundler", "~> 2.4.22"
 
 # Jekyll plugins
 group :jekyll_plugins do
