@@ -14,15 +14,15 @@
 
 # Production context settings
 [context.production]
-  command = "bundle install && bundle exec jekyll build"
+  command = "gem install bundler:2.4.22 && bundle install && bundle exec jekyll build"
 
 # Deploy preview settings  
 [context.deploy-preview]
-  command = "bundle install && bundle exec jekyll build --drafts"
+  command = "gem install bundler:2.4.22 && bundle install && bundle exec jekyll build --drafts"
 
 # Branch deploy settings
 [context.branch-deploy]  
-  command = "bundle install && bundle exec jekyll build --drafts"
+  command = "gem install bundler:2.4.22 && bundle install && bundle exec jekyll build --drafts"
 
 # Basic redirects for SPA-like behavior (optional)
 [[redirects]]
