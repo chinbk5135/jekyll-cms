@@ -3,13 +3,13 @@
   # Directory that contains the deploy-ready HTML files and assets
   publish = "_site/"
   
-  # Build command with bundler update
-  command = "gem install bundler:2.4.22 && bundle install && bundle exec jekyll build"
+  # Build command with RubyGems update
+  command = "gem update --system && bundle install && bundle exec jekyll build"
 
   [build.environment]
-    RUBY_VERSION = "2.7.8"
+    RUBY_VERSION = "3.0.6"
     BUNDLER_VERSION = "2.4.22"
-    NODE_VERSION = "16"
+    NODE_VERSION = "18"
     JEKYLL_ENV = "production"
 
 # Production context settings
